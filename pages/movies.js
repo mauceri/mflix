@@ -32,7 +32,7 @@ export async function getServerSideProps() {
             .sort({ metacritic: -1 })
             .limit(20)
             .toArray();
-            console.log("OK")
+            console.log("OK!")
         return {
             props: { movies: JSON.parse(JSON.stringify(movies)) },
         };
