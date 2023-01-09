@@ -25,7 +25,7 @@ export async function getServerSideProps() {
     try {
         const client = await clientPromise;
         const db = client.db("sample_mflix");
-
+  
         const movies = await db
             .collection("movies")
             .find({})
@@ -39,4 +39,4 @@ export async function getServerSideProps() {
     } catch (e) {
         console.error(e);
     }
-}
+  }
