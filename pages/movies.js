@@ -2,8 +2,14 @@ import clientPromise from "../lib/mongodb";
 
 export default function Movies({ movies }) {
     return (
+        
         <div>
-            <h1>Top 20 Movies of All Time</h1>
+        <ul>
+            <li><a href="/">Back</a></li>
+            <li><a href="/top">100 meilleurs films</a></li>
+        </ul>  
+ 
+          <h1>Top 20 Movies of All Time</h1>
             <p>
                 <small>(According to Metacritic)</small>
             </p>
